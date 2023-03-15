@@ -9,6 +9,16 @@
 # print(lista2)
 
 def unificaOrdena(lista1,lista2):
+    """Esta fruncion toma dos listas ya ordenadas con anterioridad 
+       y las unifica de manera ordenada en una nueva lista
+
+    Args:
+        lista1 (enteros): lista ordenada de manera previa
+        lista2 (enteros): segunda lista, tambien ordenada de manera previa
+
+    Returns:
+        una lista nueva a partir de las anteriores. Tambien ordenada.
+    """
     listaNuvea=[]
     a=len(lista1)
     b=len(lista2)
@@ -48,9 +58,11 @@ def ordena(lista1,lista2):
                 listaNueva[y], listaNueva[y+1]= listaNueva[y+1], listaNueva[y]
     return listaNueva
 
+
+
 matias=[20,21,22,23,24]
 david=[16,17,18,19]
 print(unificaOrdena(matias,david))
-nahuel=[2,1,3,4,5]
+nahuel=[2,1,3,4,5,10,12,11]
 abril=[2,1,4,5,6,7]
 print(ordena(nahuel,abril))
